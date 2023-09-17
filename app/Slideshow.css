@@ -1,0 +1,79 @@
+/* Slideshow container styles */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the slideshow */
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Individual slide styles */
+.slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 400px; /* Adjust the height as needed */
+  transition: transform 0.5s ease;
+  opacity: 0.7;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+/* Slide content styles */
+.slide-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slide-image {
+  max-width: 50%; /* Adjust image size as needed */
+  transform: rotate(5deg); /* Rotate the image */
+  transition: transform 0.5s ease;
+}
+
+/* Info panel styles */
+.info {
+  background: rgba(255, 255, 255, 0.9); /* Adjust background color and opacity */
+  padding: 20px;
+  width: 50%; /* Adjust panel width */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5;
+}
+
+/* Navigation circles styles */
+.slider-circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc; /* Circle color */
+  margin: 0 5px; /* Adjust spacing between circles */
+  cursor: pointer;
+}
+
+.slider-circle.active {
+  background-color: #333; /* Active circle color */
+}
